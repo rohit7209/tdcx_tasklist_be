@@ -37,6 +37,30 @@ _Important: request & response payloads are as per the specification provided [h
 - ##### production/qa logs
     - setup not done yet
 
+#### File & Folder Structure
+- ##### Entry File ```index.js```
+    setup env vars, middlewares, creates a http express server and run it on port ```3000``` (if not specified)
+
+- ##### Middlewares ```middlewares```
+    - **SetupRequestContext** ```middlewares/setupRequestContext``` - middleware to setup necessary context for each request to the application.
+    - **AuthenticateRequest** ```middlewares/authenticateRequest``` - middleware to authenticate and accept/reject request based on their authenticity.
+
+
+- ##### Routes ```routes```
+    - **Authentication** - deals with authorizing token and login
+    - **Dashboard** - deals with APIs related to dashboard summary information
+    - **Tasks** - responsible for CRUD APIs of tasks
+
+
+- ##### Storage ```storage```
+    responsible for setting up db
+
+- ##### Services ```services```
+    it provides gateway to the 3rd party services like email service, s3 etc.
+
+- ##### Utils ```utils```
+    repository of utility functions
+
 
 #### License
 WTFPL
