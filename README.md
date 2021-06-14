@@ -33,9 +33,10 @@ _Important: request & response payloads are as per the specification provided [h
 
 #### Logs
 - ##### local logs
-    - can be found from ```/log/combined.log``` & ```/log/error.log```
+    - can be found at ```/log/combined.log``` & ```/log/error.log```
 - ##### production/qa logs
     - setup not done yet
+
 
 #### License
 WTFPL
